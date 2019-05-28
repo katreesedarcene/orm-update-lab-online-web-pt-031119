@@ -57,7 +57,6 @@ class Student
   student.id = row[0]
   student.name =  row[1]
   student.length = row[2]
-  new_song  
 end
  
   # Remember, you can access your database connection anywhere in this class
