@@ -51,6 +51,14 @@ class Student
     student.save
     student
   end
+  
+  def self.new_from_db(row)
+  student = self.new  
+  student.id = row[0]
+  student.name =  row[1]
+  student.length = row[2]
+  new_song  
+end
  
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]
